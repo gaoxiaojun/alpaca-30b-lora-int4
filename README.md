@@ -11,7 +11,7 @@ LoRA credit to https://huggingface.co/baseten/alpaca-30b
 
 # Usage
 1. Run manually through GPTQ
-2. (More setup but better UI) - Use the [text-generation-webui](https://github.com/oobabooga/text-generation-webui/wiki/LLaMA-model#4-bit-mode)
+2. (More setup but better UI) - Use the [text-generation-webui](https://github.com/oobabooga/text-generation-webui/wiki/LLaMA-model#4-bit-mode). Make sure to follow the installation steps first [here](https://github.com/oobabooga/text-generation-webui#installation) before adding GPTQ support.
 
 **Note that a recent code change in GPTQ broke functionality for GPTQ in general, so please follow [these instructions](https://huggingface.co/elinas/alpaca-30b-lora-int4/discussions/2#641a38d5f1ad1c1173d8f192) to fix the issue!**  
 
