@@ -18,7 +18,7 @@ LoRA credit to https://huggingface.co/baseten/alpaca-30b
 Since this is instruction tuned, for best results, use the following format for inference:
 ```
 ### Instruction:
-<your-prompt>
+your-prompt
 ### Response:
 ```
 
