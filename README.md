@@ -9,6 +9,14 @@ https://github.com/qwopqwop200/GPTQ-for-LLaMa
 
 LoRA credit to https://huggingface.co/baseten/alpaca-30b
 
+# Usage
+Since this is instruction tuned, for best results, use the following format for inference:
+```
+### Instruction:
+<your-prompt>
+### Response:
+```
+
 --
 license: other
 ---
