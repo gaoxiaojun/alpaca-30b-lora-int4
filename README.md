@@ -7,6 +7,8 @@ This LoRA trained for 3 epochs and has been converted to int4 via GPTQ method. S
 
 https://github.com/qwopqwop200/GPTQ-for-LLaMa
 
+LoRA credit to https://huggingface.co/baseten/alpaca-30b
+
 --
 license: other
 ---
