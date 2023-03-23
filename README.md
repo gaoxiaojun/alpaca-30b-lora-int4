@@ -10,12 +10,35 @@ https://github.com/qwopqwop200/GPTQ-for-LLaMa
 LoRA credit to https://huggingface.co/baseten/alpaca-30b
 
 # Usage
+1. Run manually through GPTQ
+2. (More setup but better UI) - Use the [text-generation-webui](https://github.com/oobabooga/text-generation-webui/wiki/LLaMA-model#4-bit-mode)
+  2a. Note that a recent code change in GPTQ broke functionality so please follow [these instructions](https://huggingface.co/elinas/alpaca-30b-lora-int4/discussions/2#641a38d5f1ad1c1173d8f192) to fix the issue  
+
 Since this is instruction tuned, for best results, use the following format for inference:
 ```
 ### Instruction:
 <your-prompt>
 ### Response:
 ```
+
+If you want deterministic results, turn off sampling. You can turn it off in the webui by unchecking `do_sample`. 
+
+For cai-chat mode, you won't want to use instruction prompting, rather create a character and set sampler settings. Here is an example of settings that work well for me:
+```
+do_sample=True
+temperature=0.95
+top_p=1
+typical_p=1
+repetition_penalty=1.1
+top_k=40
+num_beams=1
+penalty_alpha=0
+min_length=0
+length_penalty=1
+no_repeat_ngram_size=0
+early_stopping=False
+```
+You can then save this as a `.txt` file in the `presets` folder.
 
 --
 license: other
