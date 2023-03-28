@@ -17,10 +17,10 @@ New weights have been added. The old .pt version is no longer supported and has 
 Evals
 -----
 **c4-new** -
-6.925674915313721
+6.398105144500732
 
 **ptb-new** -
-9.23875904083252
+8.449508666992188
 
 **wikitext2** -
 4.402845859527588
