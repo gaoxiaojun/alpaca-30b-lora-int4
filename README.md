@@ -9,11 +9,26 @@ https://github.com/qwopqwop200/GPTQ-for-LLaMa
 
 LoRA credit to https://huggingface.co/baseten/alpaca-30b
 
+# Update 2023-03-27
+New weights have been added. The old .pt version is no longer supported and has been replaced by a 128 groupsize safetensors file. Update to the latest GPTQ to use it.
+
+**alpaca-30b-4bit-128g.safetensors**
+
+Evals
+-----
+**c4-new** -
+coming soon
+
+**ptb-new** -
+coming soon
+
+**wikitext2** -
+coming soon
+
 # Usage
 1. Run manually through GPTQ
 2. (More setup but better UI) - Use the [text-generation-webui](https://github.com/oobabooga/text-generation-webui/wiki/LLaMA-model#4-bit-mode). Make sure to follow the installation steps first [here](https://github.com/oobabooga/text-generation-webui#installation) before adding GPTQ support.
 
-**Note that a recent code change in GPTQ broke functionality for GPTQ in general, so please follow [these instructions](https://huggingface.co/elinas/alpaca-30b-lora-int4/discussions/2#641a38d5f1ad1c1173d8f192) to fix the issue!**  
 
 Since this is instruction tuned, for best results, use the following format for inference:
 ```
