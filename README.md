@@ -17,13 +17,13 @@ New weights have been added. The old .pt version is no longer supported and has 
 Evals
 -----
 **c4-new** -
-coming soon
+6.925674915313721
 
 **ptb-new** -
-coming soon
+9.23875904083252
 
 **wikitext2** -
-coming soon
+4.402845859527588
 
 # Usage
 1. Run manually through GPTQ
