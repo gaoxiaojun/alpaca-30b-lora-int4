@@ -9,13 +9,18 @@ https://github.com/qwopqwop200/GPTQ-for-LLaMa
 
 LoRA credit to https://huggingface.co/baseten/alpaca-30b
 
+# Update 2023-03-29
+There is also a non-groupsize quantized model that is 1GB smaller in size, which should allow running at max context tokens with 24GB VRAM. The evaluations are better 
+on the 128 groupsize version, but the tradeoff is not being able to run it at full context without offloading or a GPU with more VRAM.
+
 # Update 2023-03-27
-New weights have been added. The old .pt version is no longer supported and has been replaced by a 128 groupsize safetensors file. Update to the latest GPTQ to use it.
+New weights have been added. The old .pt version is no longer supported and has been replaced by a 128 groupsize safetensors file. Update to the latest GPTQ version/webui.
 
-**alpaca-30b-4bit-128g.safetensors**
 
-Evals
+Evals - Groupsize 128 + True Sequential
 -----
+**alpaca-30b-4bit-128g.safetensors** [4805cc2]
+
 **c4-new** -
 6.398105144500732
 
@@ -24,6 +29,21 @@ Evals
 
 **wikitext2** -
 4.402845859527588
+
+Evals - Default + True Sequential
+-----
+
+**alpaca-30b-4bit.safetensors** [6958004]
+
+**c4-new** -
+6.592941761016846
+
+**ptb-new** -
+8.718379974365234
+
+**wikitext2** -
+4.635514736175537
+
 
 # Usage
 1. Run manually through GPTQ
